@@ -1,0 +1,15 @@
+﻿@model MacrameViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Makramé Alster!</h1>
+    </div>
+    <div class="caption">
+    </div>
+
+    @*Loop over all handicrafts and displaying them*@
+    @foreach (var handicraft in Model.Macrame)
+    {
+        <partial name="_HandicraftCard" model="handicraft" />
+    }
+</div>

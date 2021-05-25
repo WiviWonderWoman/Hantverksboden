@@ -1,0 +1,52 @@
+﻿@* Templet for all views *@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hantverksboden_2.0</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a asp-controller="Home" asp-action="Index">Hem</a></li>
+                    <li><a asp-controller="Handicraft" asp-action="List">Hantverk</a></li>
+                    <li><a asp-controller="Handicraft" asp-action="Macrame">Makramé</a></li>
+                    <li><a asp-controller="Handicraft" asp-action="Drawing">Tecknat</a></li>
+                    <li><a asp-controller="Handicraft" asp-action="Crochet">Virkat</a></li>
+                    <li><a asp-controller="Handicraft" asp-action="Contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead">
+                    <img class="img-rounded" alt="Hanverksboden" src="~/Images/Boden.png" />
+                </p>
+            </div>
+            @* container for the difrent views to be rendered *@
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

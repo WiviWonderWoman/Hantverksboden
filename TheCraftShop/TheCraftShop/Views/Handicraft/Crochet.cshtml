@@ -1,0 +1,15 @@
+﻿@model CrochetViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Virkade skapelser!</h1>
+    </div>
+    <div class="caption">
+    </div>
+
+    @*Loop over all handicrafts and displaying them*@
+    @foreach (var handicraft in Model.Crochet)
+    {
+        <partial name="_HandicraftCard" model="handicraft" />
+    }
+</div>

@@ -1,0 +1,22 @@
+﻿@model HomeViewModel
+
+<div class="row">
+    <div class="caption-full">
+        <h1>Välkommen till Hanverksboden!</h1>
+    </div>
+    <div class="caption">
+        <h2>Mina nyaste alster:</h2>
+    </div>
+
+    @*Loop over new items handicrafts and displaying them*@
+    @foreach (var handicraft in Model.NewItem)
+    {
+        <partial name="_HandicraftCard" model="handicraft" />
+    }
+</div>
+        
+    
+
+
+
+

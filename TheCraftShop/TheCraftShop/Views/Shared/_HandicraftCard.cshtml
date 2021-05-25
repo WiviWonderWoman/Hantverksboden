@@ -1,0 +1,15 @@
+﻿@model Handicraft
+
+@*partial view for displaying handicrafts*@
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="~/Images/@Model.Image" alt="">
+        <div class="caption">
+            <h3 class="pull-right">@Model.Price.ToString("c")</h3>
+            <h3>
+                <a asp-controller="Handicraft" asp-action="Details" asp-route-id="@Model.HandicraftId">@Model.Name</a>
+            </h3>
+            <p>@Model.Description</p>
+        </div>
+    </div>
+</div>
