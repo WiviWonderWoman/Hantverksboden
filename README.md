@@ -4,8 +4,7 @@ Inlämningsuppgift i kursen Dynamiska Webbsystem 1, Webbutvecklare inom .NET, YH
 1. 100/100 (VG)
 2. 95/100 (VG)
 ## Tekniker
-* .NET Core 
-* .NET core CLI
+* ASP.NET MVC
 * xUnit
 * C#
 * JavaScript
