@@ -6,7 +6,6 @@ Inlämningsuppgift i kursen Dynamiska Webbsystem 1, Webbutvecklare inom .NET, YH
 ## Tekniker
 * .NET Core 
 * .NET core CLI
-* ASP.NET Core Identity
 * xUnit
 * C#
 * JavaScript
